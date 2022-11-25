@@ -12,9 +12,9 @@
         $code = $_POST['code'];
         //Database credentials to mysql
         $servername = "localhost";
-        $username = "root";
-        $password = "root";
-        $db = "otp";
+        $username = "xstrepfx_naman";
+        $password = "Ashagana2014";
+        $db = "booklet";
         //Database connection
         $conn = new mysqli($servername, $username, $password, $db);
         //Check connection
@@ -29,7 +29,7 @@
             
             //saving the user detailes to the database
 
-            $sql = "INSERT INTO `otp`(`phone_num`, `name`, `city`, `company`) VALUES ('$phone','$name','$city','$company')";
+            $sql = "INSERT INTO `booklet`(`phone_num`, `name`, `city`, `company`) VALUES ('$phone','$name','$city','$company')";
 
             if ($conn->query($sql) === TRUE) {
             } else {

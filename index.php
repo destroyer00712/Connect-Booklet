@@ -16,16 +16,16 @@ $otp = $_SESSION['otp'];
 $phone = "91".$nm;
 //Database credentials to mysql
 $servername = "localhost";
-$username = "root";
-$password = "root";
-$db = "otp";
+$username = "xstrepfx_naman";
+$password = "Ashagana2014";
+$db = "booklet";
 //Database connection
 $conn = new mysqli($servername, $username, $password, $db);
 //Check connection
 if ($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
 }
-$query = "SELECT * FROM otp WHERE phone_num = '$phone'";
+$query = "SELECT * FROM xstrepfx_booklet WHERE phone_num = '$phone'";
 
 $result = $conn->query($query);
 
